@@ -1,0 +1,44 @@
+body {
+	text-align: center;
+	background-color: #22A2FF;
+}
+
+nav {
+	display: inline-block;
+	color: #22A2FF;
+}
+
+a:link {
+	color: #0B38FF;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0B38FF;
+}
+
+.header {
+	position: relative;
+	background-color: white;
+	border: solid 1px black	;
+	width: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-bottom: 4%;
+	text-align: center;
+	font-size: 2em;
+	font-family: Helvetica;
+	font-weight: bolder;
+	
+}
+
+.main {
+	position: absolute;
+	background-color: #96D3FF;
+	width: 80%;
+	height: 80%;
+	left: 10%;
+	text-align: left;
+	font-size: 1em;
+	font-family: Helvetica;
+}
