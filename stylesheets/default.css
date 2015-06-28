@@ -39,6 +39,9 @@ a:visited {
 	height: 86%;
 	left: 10%;
 	text-align: left;
-	font-size: 1em;
 	font-family: Helvetica;
+}
+
+section {
+	font-size: 11px;
 }
