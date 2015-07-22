@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
-  <title>Technical Blog - Margins, Borders, and Padding</title>
+  <title>Technical Blog - Ruby Classes/title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 </head>
@@ -12,11 +12,40 @@
   <a href="../project/index.html"><nav class="header">My Projects</nav></a>
   <a href="../aboutme/index.html"><nav class="header">About Me</nav></a>
   <main class="main">
-    <h1>Title</h1>
+    <h1>Ruby Classes</h1>
     <h2></h2>
-    <h4>date</h4>
+    <h4>July 20, 2015</h4>
     <section>
-    <!-- Start typing stuff here -->
-  </main>
+    <p>
+      One thing we worked a lot on this week at DBC was creating Ruby classes. We had an introduction last week, but worked a lot more on it this week.
+    </p>
+    <p>
+      Classes in Ruby are used to define an object of your choice, which can be almost anything. And in that class, you have methods that provides relevant information for that object or it can do something that object can do. One of our earlier challenges had us create a die class. In that class, there is a method that tells us how many sides the die has (if you play D&D or any other similar games, you know there are more than just a 6 sided die) and a method that rolls the die. So it can be something as simple as that or it can be something more complicated.
+    </p> 
+    <p>
+      I'm going to have an example of a class that I will write and I'll teach from that. One of our challenges this week was to create a Bingo game, so I'll continue with that theme since I love games. I'm going create a code for a card class. And from that, I'll create another class called poker,  which is something I will be working on when I have extra time. I'll use these two examples to explain classes.
+    </p>
+    <p>
+      Here is the card class:
+      <script src="https://gist.github.com/alfredlam42/b4968993d16d50712698.js"></script>
+    </p>
+    <p>
+      Obviously, to create a class, you would begin with "class" followed by the name of the class. One of the most important thing about classes is the initialize method. This is the code that the computer will automatically run when an object is created within that class. It also tells how many arguments need to be entered when you want to create an object of that class. In my example, you need three arguments: rank, suit, value. You're probably thinking, doesn't a card only have a rank and suit, so what is up with the third argument. It's because I'm creating a poker game, so that value is going to be important since some cards like the Jack will be "J" so that value argument will make it 11.
+    </p>
+    <p>
+      Inside the initialize method, I'm setting the variables to have the value of the arguments. You probably saw the @ symbol in front of the variables. In the class, the @ symbol makes it an instance variable. It allows other methods in the class to access the value or change it. If there is no @ symbol, the second method in the class would not be able to access those variables and create an error.
+    </p>
+    <p>
+      <script src="https://gist.github.com/alfredlam42/5bddb6958f9e26b5c27f.js"></script>
+    </p>
+    <p>
+      Here is the poker class. One thing you may notice is that there isn't an initalize in this class. That is because there isn't any code I want to run when an object is created in this class and there shouldn't be any arguments either. If you look in the shuffle method, there is no @ symbol in front of rank and suit. I didn't want it to be an instance variable because there is no reason for other methods to access this information. It only needed to be used in that specific method. So when coding, consider if the variable should be local or instance.
+    </p>
+    <p>
+      Another thing to notice is that the @deck variable is adding an object of the card class. You can create an object of a certain class and use it in another class like I did here. And because the object is part o the card class, it can use any methods available to it. If you look at the hand method, you can see that I use the to_s method I created for the card class.
+    </p>
+    <p>
+      This is only a brief introduction to Ruby classes and there are probably a lot more things that I haven't learned yet. Check back and I will update when I get the chance. But check my project page as I will be putting my poker class code in that section when it is complete.
+    </p>
 </body>
 </html>
