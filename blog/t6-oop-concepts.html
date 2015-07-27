@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Blog - Variable Scope</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+  <a href="../index.html"><nav class="header">Home</nav></a>
+  <a href="../blog/index.html"><nav class="header">Blog</nav></a>
+  <a href="../project/index.html"><nav class="header">My Projects</nav></a>
+  <a href="../aboutme/index.html"><nav class="header">About Me</nav></a>
+  <main class="main">
+    <h1>Variable Scope</h1>
+    <h2>What are they and how do we use them?</h2>
+    <h4>date</h4>
+    <section>
+    <p>
+      One of the big things we learned this week at DBC was variable scope. The easiest way for me to describe this would be to liken it to spy movies. Each spy is given a clearance level. The higher the clearance level, the more access you have and the more places you can go. Here are the different variable scopes that are available in ruby and the syntax for creating them.
+      <script src="https://gist.github.com/alfredlam42/281e764b219bd46c0e28.js"></script>
+    </p>
+    <p>
+      We're going to start of the lowest security level, the local variable. As you can see in the code, there is no special syntax when declaring a local variable. You just declare the variable name and that's it. As the name implies, it is local, meaning it can only be used by where it is defined. If it's defined in a method, you can only use it in that method. No other method will be able to use it.
+    </p>
+    <p>
+      Next up is the instance variable. It is declared by using the @ symbol before the variable name. The instance variable is usually used in a class, allowing all methods in that class to use it. Look at the following example on how to use it.
+      <script src="https://gist.github.com/alfredlam42/ef97bcc701cc69c51bbd.js"></script>
+    </p>
+    <p>
+      Looking at var1, if you call method_1, the output for @instance_variable is 3 as expected. When you call method_2, the output is 4 and not 1. Calling method_1 has changed the value of @instance_variable so when method_2 was called, it already has a value of 3 and then adding 1 to it makes it 4. If you look at var2, the value of @instance variable after calling method_1 is 1. This is because instance variables are only affected within it's own instance of that class, hence the name.
+    </p>
+    <p>
+      Next up is the class variable. It is declared by using two @ symbols before the variable name. Like the instance variable, it is mostly used in classes. The only difference is that if it is changed in one instance, it is changed in all instances of the same class.
+      <script src="https://gist.github.com/alfredlam42/b684d4e24a78b7ccc786.js"></script>
+    </p>
+    <p>
+      If you compare this code to the previous one, the only changes made is that instead of an instance variable, I am using a class variable. Buf if you look at the output of each of them, that is where the main difference is. So var1 is the same as in the previous example. But if you look at var2, after calling method_1, the output of the variable is 5 instead of 1. Like I mentioned before, the class variable runs across all instances of that class. So when we created var2, @@class_variable alread had a value of 4, which is got from var1.
+    </p>
+    <p>
+      Next is the global variable. It is declared with the $ symbol in front of the variable name. It isn't used very often, like the name implies, it can be accessed and modified anyone anywhere. I don't think I need to show an example because of what it is. Like how the class variable's value can be modified by any instance of that class, the global variable is similar, but anyone can do it. Two different classes can be using that one variable and the data will be modified. And it is precisely because of this that it isn't used often. Too much change to the data can affect another class or module using it.
+    </p>
+    <p>
+      And finally is the constant. This is declared by having the variable in all caps. The constant is a global variable which can be access by anyone. The only difference is that we made it a costant so the information stored in the variable should be something that shouldn't change. Like you have a hash with the month and how many days within that month or the value for the speed of light. Those are things that doesn't change, but it's information that you want anyone to be able to access, but not modify. If you do try to change it, a warning will pop up telling you that you're trying to change it.
+    </p>
+  </main>
+</body>
+</html>
