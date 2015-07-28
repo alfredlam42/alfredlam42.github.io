@@ -2,6 +2,9 @@ body {
 	text-align: center;
 }
 
+h4 {
+	color: #a61c00;
+}
 
 .header {
 	position: relative;
