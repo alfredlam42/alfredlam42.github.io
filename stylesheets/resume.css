@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+}
+
+
+.header {
+	position: relative;
+	width: 20%;
+	left: 9%;
+	text-align: left;
+	font-size: 2em;
+	font-family: Helvetica;
+}
+
+.main {
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	left: 10%;
+	text-align: left;
+	font-family: Helvetica;
+	font-size: 11px;
+}
