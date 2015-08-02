@@ -8,6 +8,11 @@ nav {
 	color: #22A2FF;
 }
 
+img {
+	display: block;
+	margin: 0 auto;
+}
+
 a:link {
 	color: #0B38FF;
 	text-decoration: none;

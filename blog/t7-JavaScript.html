@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby vs JavaScript</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+  <a href="../index.html"><nav class="header">Home</nav></a>
+  <a href="../blog/index.html"><nav class="header">Blog</nav></a>
+  <a href="../project/index.html"><nav class="header">My Projects</nav></a>
+  <a href="../aboutme/index.html"><nav class="header">About Me</nav></a>
+  <main class="main">
+    <h1>Ruby vs JavaScript</h1>
+    <h2>Ruby Hashes and JavaScript Objects</h2>
+    <h4>August 1, 2015</h4>
+    <section>
+    <p>
+      <img src="../imgs/semicolons.jpg">
+    </p>
+    <p>
+      As you can see from the image above, one of the main differences between Ruby and JavaScript that I found very annoying was adding semi-colons to the end of almost every single line of code. The only time you don't have to add it is for `for` loops, `if` statements, `while` loops, and a couple more. But you do have to end with a semi-colon for the block of code inside those loops or statements. If you forget the semi-colon, there will be an error when you're running your code. It's an easy fix, but annoying.
+    </p>
+    <p>
+      Another thing that was different (and less annoying) was that you needed to add these: `{}` for your `if` statements or loops or what have you if it's longer than one line. In Ruby, if you indent it, the code will understand that the three lines following those things are part of it. But for JavaScript, the block of code needs to be between those squiggly brackets.
+    </p>
+    <p>
+      Let's move away from those small differences. Just had to vent that out. One thing we should look at is the difference between Ruby hashes and JavaScript objects. JavaScript objects can be like a Ruby hash, but a Ruby has cannot be a JavaScript Object. First let's look at the similarities. If you go back to Technical Blog #3, you can see an example of how assigning values to a hash work. Compare that to assigning a value for a JavaScript object:
+      <script src="https://gist.github.com/alfredlam42/e23d086f4ed4c751f6c0.js"></script>
+    </p>
+    </p>
+    <p>
+      Looks very similar wouldn't you say? In JavaScript, these are the object's properties. While a hash can only store simple information like a string or an integer, a JavaScript object can also store it's very own function and interact with other objects. Here's how it works:
+      <script src="https://gist.github.com/alfredlam42/b1f212030836b660c623.js"></script>
+    </p>
+    <p>
+      As you can see, the object has it's very own function, which hashes can never have. And if you have two object, you can definitely use properties from the second object's properties in the first object's functions. Sounds crazy, but it's true. It'll work. They can interact with them. Look at my project page for an example of this.
+    </p>
+  </main>
+</body>
+</html>
