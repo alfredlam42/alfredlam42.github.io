@@ -1,0 +1,17 @@
+#left {
+    float: left;
+    width: 49%;
+}
+
+#right {
+    float: right;
+    width: 49%;
+}
+
+dt {
+    font-family: Arial;
+    font-weight: bold;
+}
+i {
+    color: red;
+}
