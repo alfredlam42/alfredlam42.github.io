@@ -6,6 +6,6 @@ $(document).ready(function() {
 
 	$(".header").mouseleave(function(){
 		$(this).css("background-color", "white")
-		$(this).css("color", "#005AB6;")
+		$(this).css("color", "#005AB6")
 	});
 })
