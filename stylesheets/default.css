@@ -38,10 +38,9 @@ a:visited {
 }
 
 .main {
-	position: absolute;
+	position: relative;
 	background-color: #96D3FF;
 	width: 80%;
-	height: 86%;
 	left: 10%;
 	text-align: left;
 	font-family: Helvetica;
@@ -49,4 +48,9 @@ a:visited {
 
 section {
 	font-size: 11px;
+}
+
+#caption {
+	text-align: center;
+	font-size: 9px;
 }
