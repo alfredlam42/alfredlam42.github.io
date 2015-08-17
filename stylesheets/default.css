@@ -1,11 +1,11 @@
 body {
 	text-align: center;
-	background-color: #0099CB;
+	background-color: #005AB6;
 }
 
 nav {
 	display: inline-block;
-	color: #0099CB;
+	color: #005AB6;
 }
 
 img {
@@ -39,7 +39,7 @@ a:visited {
 
 .main {
 	position: relative;
-	background-color: #005AB6;
+	background-color: #0099CB;
 	width: 80%;
 	left: 10%;
 	text-align: left;
