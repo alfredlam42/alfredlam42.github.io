@@ -1,11 +1,9 @@
 $(document).ready(function() {
 	$('.header').mouseenter(function() {
-		$(this).css("background-color", "#FEB729")
-		$(this).css("color", "black")
+		$(this).css("border-color", "#005AB6")
 	});
 
 	$(".header").mouseleave(function(){
-		$(this).css("background-color", "white")
-		$(this).css("color", "#005AB6")
+		$(this).css("border-color", "white")
 	});
 })

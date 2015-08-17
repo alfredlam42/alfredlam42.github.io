@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	background-color: #005AB6;
+	background-color: white;
 }
 
 nav {
@@ -34,16 +34,18 @@ a:visited {
 	font-size: 2em;
 	font-family: Helvetica;
 	font-weight: bolder;
-	
+	border-color: white;
 }
 
 .main {
 	position: relative;
-	background-color: #0099CB;
-	width: 80%;
+	background-color: white;
+	width: 78%;
 	left: 10%;
 	text-align: left;
 	font-family: Helvetica;
+	border: 2px solid #005AB6;
+	padding: 1%;
 }
 
 section {
