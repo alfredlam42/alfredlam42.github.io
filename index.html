@@ -1,46 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Alfred's Website</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="./stylesheets/default.css"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="./stylesheets/default.js"></script>
-</head>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./stylesheets/application.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="./js/application.js"></script>
+    <script src="./js/main-menu-event.js"></script>
+    <script src="./js/main-menu-selection.js"></script>
+    <title>Alfred Lam</title>
+  </head>
 
-<body>
-  <a href="./index.html"><nav class="header">Home</nav></a>
-  <a href="./blog/index.html"><nav class="header">Blog</nav></a>
-  <a href="./project/index.html"><nav class="header">My Projects</nav></a>
-  <a href="mailto:alfred.lam.42@gmail.com"><nav class="header">Contact Me</nav></a>
-  <main class="main">
-    <section>
-    <img src="./imgs/ClubCrewQualifiers.jpg">
-    <p id="caption">I'm the biggest guy standing in the picture.</p>
-      <p>
-        Hi, my name is Alfred and I'm currently taking the Dev Boot Camp course to learn how to code. As you can see, I've only learned basic HTML and CSS which is why this website is so plain. It will get better as I continue to learn more and more.
-      </p>
-      <h2>Background</h2>
-        <p>
-          I was born and raised in San Francisco and still living here. I love the weather in San Francisco because I don't really like the heat. I went to school at San Francisco State University and majored in Mathematics with an emphasis on education. I got into the teacher credential program, taught two classes, and found out that teaching was not for me. With my plans falling through, I took the first job that my friend referred me to. It was nice since it was good pay and it was very flexible with time. I allowed me to do what I wanted to do during that time. After spending three years there I decided I need to leave this place because work got boring. I needed a new challenge.
-        </p>
-        <p>
-          I took some computer programming classes while I was in college and it was fun. It definitely stimulated my mind so I thought to myself that I should continue on that path and it lead me to DBC (after some research of the different boot camps available). It will be close to four years working at that job when the classroom portion starts so I'm excited for this.
-        </p>
-      <h2>Interests</h2>
-        <p>
-          The picture at the top of the page is the dragon boat team I compete with. I joined the team back in 2007 and this is my 9th year with them. We have come a long way and that picture was taken at the 2015 Club Crew World Championship Qualifiers. Only the first place team can go to the World Championship. We ended in third place overall, but we were only one point behind second place. Great competition and challenge though.
-        </p>
-        <p>
-          I'm also a runner. This happened because one of my team members signed me up for a half marathon and after completing it, I became addicted. I have completed many half marathons and broke a lot of my personal records. One of my other team members convinced me to do a full marathon so I did that as well. I haven't ran a lot recently because my team was trying to qualify for the world championships. Long endurance runs are detrimental to muscle growth so I've stopped the long distance running for now. Just running short distances around three miles. Will continue this now that the qualifiers are done.
-        </p>
-        <p>
-          One thing that I started because of my dragon boat team is a lifting. To become a better paddler, one of my coaches gave a workout plan to anyone who was interested. I was already lifting at the gym so that I could get into better shape, but his workout plan accelerated my growth. Go addicted to lifting as well because the feeling of being strong is awesome! I've moved on from his workout plan and started lifting with my friends and I've also broken a lot of my personal records for a lot of the lifts. Building a lot of muscles was great, but it negatively affected my running. More muscle requires more energy and oxygen for the body so I needed to slow down my speed for my body to do that. Which is why I only go three miles now.
-        </p>
-        <p>
-          I'm also a giant geek. I read comic books and follow a lot of T.V. shows. This interest is not because of my team. I mostly read D.C. comic books like Batman, Green Arrow, Nightwing, etc. I don't follow the Marvel comics too much. Some of my favorite T.V. shows include Doctor Who, Arrow, and The Flash. I also watch a lot of Japanese shows. Some of my favorites areOne Piece, Attack on Titan, Tengen Toppa Gurren Lagaan, and Kamen Rider. And there are new shows coming out every season.
-        </p>
-    </section>
-  </main>
-</body>
+  <body>
+    <div id='container'>
+      <div id='instructions'>
+        <div id='#instruction-container'>
+          <p>Welcome!</p>
+          <p>You can use your mouse to navigate like any other website or you can use the arrow keys to control the pointer, the 'enter/return' key to select, and 'space' to go back to the main page.</p>
+          <p>Press any key to continue.</p>
+        </div>
+      </div>
+
+      <aside id='side-menu'>
+        <div class='menu-row'>
+          <div class='pointer-box' id='current-selection'><img src='./images/HandCursor.gif'></div>
+          <div class='option'><a href='./item.html'>Items</a></div>
+        </div>
+        <div class='menu-row'>
+          <div class='pointer-box'></div>
+          <div class='option'><a href='./magic.html'>Magic</a></div>
+        </div>
+        <div class='menu-row'>
+          <div class='pointer-box'></div>
+          <div class='option'><a class='not-active' href='#'>Equip</a></div>
+        </div>
+        <div class='menu-row'>
+          <div class='pointer-box'></div>
+          <div class='option'><a href='./status.html'>Status</a></div>
+        </div>
+        <div class='menu-row'>
+          <div class='pointer-box'></div>
+          <div class='option'><a class='not-active' href='#'>Form</a></div>
+        </div>
+        <div class='menu-row'>
+          <div class='pointer-box'></div>
+          <div class='option'><a class='not-active' href='#'>Change</a></div>
+        </div>
+        <div class='menu-row'>
+          <div class='pointer-box'></div>
+          <div class='option'><a class='not-active' href='#'>Custom</a></div>
+        </div>
+        <div class='menu-row'>
+          <div class='pointer-box'></div>
+          <div class='option'><a href='./save.html'>Save</a></div>
+        </div>
+      </aside>
+
+      <div id='time'>
+        <div id='time-info' class='vert-align'>
+          <div>Time:</div>
+          <div id='clock'></div>
+        </div>
+      </div>
+
+      <div id='contact'>
+        <div class='vert-align'>
+          <div id='email'><a href='mailto:alfred.lam.42@gmail.com'>alfred.lam.42@gmail.com</a></div>
+        </div>
+      </div>
+
+      <div class='screen'>
+        <div class='character'></div>
+        <div class='character'></div>
+        <div class='character'>
+          <div class='character-picture'>
+            <img src='./images/me.jpg'>
+          </div>
+
+          <div class='current-stats'>
+            <div class='stat'> Alfred Lam   Developer</div>
+            <div class='stat'>   Level             50</div>
+            <div class='stat'>   HP         4036/4036</div>
+            <div class='stat'>   MP          206/ 206</div>
+          </div>
+        </div>
+        <div class='character'></div>
+        <div class='character'></div>
+      </div>
+    </div>
+  </body>
 </html>
