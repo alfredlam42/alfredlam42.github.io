@@ -43,3 +43,14 @@ $(document).keydown(function(e){
     }
   }
 })
+
+$(document).ready(function(){
+  $('a').on('click', function(event){
+    event.preventDefault();
+
+    var address = $(this).attr('href');
+    if (address != '#') {
+      window.open(address, '_blank');
+    }
+  })
+})

@@ -156,7 +156,7 @@ a {
   font-size: 2.5vh;
 }
 
-#projects-header {
+#projects-header, #about-header {
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
@@ -164,7 +164,7 @@ a {
   height: 10%;
 }
 
-#projects-title, #back {
+#projects-title, #about-title, #back {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -177,13 +177,14 @@ a {
   font-size: 4.5vh;
 }
 
-#project-list {
+#project-list{
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
+  align-items: flex-start;
   background-color: blue;
+  height: 89.90%;
   width: 99.7%;
-  height: 88.95%;
   border: 2px solid silver;
   border-radius: 3px;
 }
@@ -282,57 +283,20 @@ a {
   display: none;
 }
 
-.status-col {
-  height: 100%;
-  width: 49%;
-  display: inline-block;
+#about-me  {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
   text-align: left;
-}
-
-.status-row {
-  white-space: pre;
-  height: 7%;
-  text-indent: 1em;
-  font-size: 4.5vh;
-}
-
-.indent {
-  text-indent: 2em;
-}
-
-#status-title {
   background-color: blue;
+  height: 89.90%;
+  width: 99.7%;
   border: 2px solid silver;
   border-radius: 3px;
-  height: 20.5%;
-  width: 99.9%;
-  font-size: 5vh;
-  display: inline-block;
 }
 
-#status-character-picture {
-  text-indent: .5em;
-  display: inline-block;
-  height: 85%;
-  transform: translateY(7.5%);
-  -webkit-transform: translateY(7.5%);
-  -ms-transform: translateY(7.5%);
-}
-
-#status-character-picture img{
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#status {
-  display: inline-block;
-  transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-}
-
-.not-active {
-  color: #848482;
+#about-me div {
+  margin: 10px 20px 10px 20px;
 }
 
 #save-title {
@@ -385,36 +349,4 @@ a {
 .save-sm-logo img {
   width: 100%;
   height: 100%;
-}
-
-#format-col-1, #format-col-2, #format-col-3, #format-col-4 {
-  width: 30%;
-  display: inline-block;
-  height: 100%;
-}
-
-.custom-row-1 {
-  width: 100%;
-  height: 10%;
-  font-size: 4vh;
-}
-
-.custom-option {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: flex-start;
-  text-indent: 2em;
-  align-items: center;
-}
-
-.format-option {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: flex-start;
-  text-indent: 2em;
-  align-items: center;
 }
