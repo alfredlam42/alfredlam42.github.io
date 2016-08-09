@@ -15,7 +15,7 @@ $(document).keydown(function(e){
       next.attr('id', 'current-selection');
       $('#current-selection').html('<img src="./images/HandCursor.gif">');
       $('#' + current.next().find('a').html()).toggleClass('hide-skill');
-      $('#' + next.next().find('a').html()).toggleClass('hide-skill')
+      $('#' + next.next().find('a').html()).toggleClass('hide-skill');
     }
     else { // loops to bottom if at top
       var next = $('.pointer-box').last();
@@ -24,7 +24,7 @@ $(document).keydown(function(e){
       $('.pointer-box').last().attr('id', 'current-selection');
       $('#current-selection').html('<img src="./images/HandCursor.gif">');
       $('#' + current.next().find('a').html()).toggleClass('hide-skill');
-      $('#' + next.next().find('a').html()).toggleClass('hide-skill')
+      $('#' + next.next().find('a').html()).toggleClass('hide-skill');
     }
   } else if (code == 40){ //down is pressed
     var current = $('#current-selection')
@@ -35,7 +35,7 @@ $(document).keydown(function(e){
       next.attr('id', 'current-selection');
       $('#current-selection').html('<img src="./images/HandCursor.gif">');
       $('#' + current.next().find('a').html()).toggleClass('hide-skill');
-      $('#' + next.next().find('a').html()).toggleClass('hide-skill')
+      $('#' + next.next().find('a').html()).toggleClass('hide-skill');
     }
     else { // loops to top if at bottom
       var next = $('.pointer-box').first();
@@ -44,7 +44,7 @@ $(document).keydown(function(e){
       $('.pointer-box').first().attr('id', 'current-selection');
       $('#current-selection').html('<img src="./images/HandCursor.gif">');
       $('#' + current.next().find('a').html()).toggleClass('hide-skill');
-      $('#' + next.next().find('a').html()).toggleClass('hide-skill')
+      $('#' + next.next().find('a').html()).toggleClass('hide-skill');
     }
   }
 });
